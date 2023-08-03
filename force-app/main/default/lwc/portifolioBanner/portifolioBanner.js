@@ -1,3 +1,7 @@
 import { LightningElement } from 'lwc';
+import PortfolioAssets from '@salesforce/resourceUrl/PortfolioAssets'
 
-export default class PortifolioBanner extends LightningElement {}
+export default class PortfolioBanner extends LightningElement {
+
+    userPic = `${PortfolioAssets}/PortfolioAssets/matheusLogo.png`
+}

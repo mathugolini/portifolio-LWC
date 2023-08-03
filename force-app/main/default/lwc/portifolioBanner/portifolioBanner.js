@@ -19,7 +19,7 @@ export default class PortfolioBanner extends LightningElement {
     trailhead = `${PortfolioAssets}/PortfolioAssets/Social/trailhead1.svg`
 
     recordId = 'a01Hu00000x9SiYIAU'
-    @wire(getRecord, {recordId:this.recordId, fields:[FULLNAME, COMPANY_LOCATION, COMPANY_NAME, DESIGNATION]})
+    @wire(getRecord, {recordId:'$recordId', fields:[FULLNAME, COMPANY_LOCATION, COMPANY_NAME, DESIGNATION]})
     portfolioHandler({data, error}) {
         if(data) {
             console.log("record Data", JSON.stringify(data))

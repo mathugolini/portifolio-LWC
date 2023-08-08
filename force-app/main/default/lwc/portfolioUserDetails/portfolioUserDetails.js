@@ -1,3 +1,12 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, api } from 'lwc';
 
-export default class PortfolioUserDetails extends LightningElement {}
+export default class PortfolioUserDetails extends LightningElement {
+
+    @api recordId
+    @api objectApiName
+
+    downloadResume() {
+
+    }
+
+}
